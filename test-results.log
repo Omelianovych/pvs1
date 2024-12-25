@@ -1,0 +1,42 @@
+Dec 22, 2024 11:18:59 PM com.labwork.HazelcastCounter runNoLockCounter
+INFO: Starting increments without locking...
+Dec 22, 2024 11:19:04 PM com.labwork.HazelcastCounter runNoLockCounter
+INFO: Finished (No Lock)
+Dec 22, 2024 11:19:04 PM com.labwork.HazelcastCounter runNoLockCounter
+INFO: Expected final value: 100000
+Dec 22, 2024 11:19:04 PM com.labwork.HazelcastCounter runNoLockCounter
+INFO: Actual final value:   23114
+Dec 22, 2024 11:19:04 PM com.labwork.HazelcastCounter runNoLockCounter
+INFO: Time taken: 4984 ms
+Dec 22, 2024 11:19:04 PM com.labwork.HazelcastCounter runPessimisticLockCounter
+INFO: Starting increments with pessimistic locking...
+Dec 22, 2024 11:19:33 PM com.labwork.HazelcastCounter runPessimisticLockCounter
+INFO: Finished (Pessimistic Lock)
+Dec 22, 2024 11:19:33 PM com.labwork.HazelcastCounter runPessimisticLockCounter
+INFO: Expected final value: 100000
+Dec 22, 2024 11:19:33 PM com.labwork.HazelcastCounter runPessimisticLockCounter
+INFO: Actual final value:   100000
+Dec 22, 2024 11:19:33 PM com.labwork.HazelcastCounter runPessimisticLockCounter
+INFO: Time taken: 29257 ms
+Dec 22, 2024 11:19:33 PM com.labwork.HazelcastCounter runOptimisticLockCounter
+INFO: Starting increments with optimistic locking...
+Dec 22, 2024 11:19:37 PM com.labwork.HazelcastCounter runOptimisticLockCounter
+INFO: Finished (Optimistic Lock)!
+Dec 22, 2024 11:19:37 PM com.labwork.HazelcastCounter runOptimisticLockCounter
+INFO: Expected final value: 100000
+Dec 22, 2024 11:19:37 PM com.labwork.HazelcastCounter runOptimisticLockCounter
+INFO: Actual final value:   100000
+Dec 22, 2024 11:19:37 PM com.labwork.HazelcastCounter runOptimisticLockCounter
+INFO: Time taken: 4300 ms
+Dec 22, 2024 11:19:40 PM com.labwork.HazelcastCounter runIAtomicLongCounter
+INFO: Starting increments with IAtomicLong...
+Dec 22, 2024 11:19:43 PM com.labwork.HazelcastCounter runIAtomicLongCounter
+INFO: Finished (IAtomicLong)!
+Dec 22, 2024 11:19:43 PM com.labwork.HazelcastCounter runIAtomicLongCounter
+INFO: Expected final value: 100000
+Dec 22, 2024 11:19:43 PM com.labwork.HazelcastCounter runIAtomicLongCounter
+INFO: Actual final value:   100000
+Dec 22, 2024 11:19:43 PM com.labwork.HazelcastCounter runIAtomicLongCounter
+INFO: Time taken: 2390 ms
+Dec 22, 2024 11:19:46 PM com.labwork.Main main
+INFO: Hazelcast Cluster Shutdown.

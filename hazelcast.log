@@ -1,0 +1,1024 @@
+Dec 22, 2024 11:18:52 PM com.hazelcast.instance.impl.HazelcastInstanceFactory
+WARNING: Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+Dec 22, 2024 11:18:52 PM com.hazelcast.system.logo
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] 
+	o    o     o     o---o   o--o o      o---o     o     o----o o--o--o
+	|    |    / \       /         |     /         / \    |         |   
+	o----o       o     o   o----o |    o             o   o----o    |   
+	|    |  *     \   /           |     \       *     \       |    |   
+	o    o *       o o---o   o--o o----o o---o *       o o----o    o   
+Dec 22, 2024 11:18:52 PM com.hazelcast.system
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Copyright (c) 2008-2024, Hazelcast, Inc. All Rights Reserved.
+Dec 22, 2024 11:18:52 PM com.hazelcast.system
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Hazelcast Platform 5.4.0 (20240415) starting at [192.168.1.58]:5701
+Dec 22, 2024 11:18:52 PM com.hazelcast.system
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Cluster name: my-cluster
+Dec 22, 2024 11:18:52 PM com.hazelcast.system
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed. For more information, see the documentation for Integrity Checker.
+Dec 22, 2024 11:18:52 PM com.hazelcast.system
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+Dec 22, 2024 11:18:53 PM com.hazelcast.system.security
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see 🔒 security recommendations and the status of current config.
+Dec 22, 2024 11:18:53 PM com.hazelcast.instance.impl.Node
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Using Multicast discovery
+Dec 22, 2024 11:18:53 PM com.hazelcast.cp.CPSubsystem
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] CP Subsystem is enabled with 3 members.
+Dec 22, 2024 11:18:54 PM com.hazelcast.internal.diagnostics.Diagnostics
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+Dec 22, 2024 11:18:54 PM com.hazelcast.core.LifecycleService
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] [192.168.1.58]:5701 is STARTING
+Dec 22, 2024 11:18:57 PM com.hazelcast.internal.cluster.ClusterService
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.58]:5701 - b1ab001f-ac93-4d85-8f8a-8493bd646ab0 this
+]
+
+Dec 22, 2024 11:18:57 PM com.hazelcast.core.LifecycleService
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] [192.168.1.58]:5701 is STARTED
+Dec 22, 2024 11:18:57 PM com.hazelcast.system.logo
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] 
+	o    o     o     o---o   o--o o      o---o     o     o----o o--o--o
+	|    |    / \       /         |     /         / \    |         |   
+	o----o       o     o   o----o |    o             o   o----o    |   
+	|    |  *     \   /           |     \       *     \       |    |   
+	o    o *       o o---o   o--o o----o o---o *       o o----o    o   
+Dec 22, 2024 11:18:57 PM com.hazelcast.system
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Copyright (c) 2008-2024, Hazelcast, Inc. All Rights Reserved.
+Dec 22, 2024 11:18:57 PM com.hazelcast.system
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Hazelcast Platform 5.4.0 (20240415) starting at [192.168.1.58]:5702
+Dec 22, 2024 11:18:57 PM com.hazelcast.system
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Cluster name: my-cluster
+Dec 22, 2024 11:18:57 PM com.hazelcast.system
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed. For more information, see the documentation for Integrity Checker.
+Dec 22, 2024 11:18:57 PM com.hazelcast.system
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+Dec 22, 2024 11:18:57 PM com.hazelcast.system.security
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see 🔒 security recommendations and the status of current config.
+Dec 22, 2024 11:18:57 PM com.hazelcast.instance.impl.Node
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Using Multicast discovery
+Dec 22, 2024 11:18:57 PM com.hazelcast.cp.CPSubsystem
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] CP Subsystem is enabled with 3 members.
+Dec 22, 2024 11:18:57 PM com.hazelcast.internal.diagnostics.Diagnostics
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+Dec 22, 2024 11:18:57 PM com.hazelcast.core.LifecycleService
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] [192.168.1.58]:5702 is STARTING
+Dec 22, 2024 11:18:57 PM com.hazelcast.internal.cluster.impl.MulticastJoiner
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Trying to join to discovered node: [192.168.1.58]:5701
+Dec 22, 2024 11:18:57 PM com.hazelcast.internal.server.tcp.TcpServerConnection
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Initialized new cluster connection between /192.168.1.58:5701 and /192.168.1.58:47271
+Dec 22, 2024 11:18:57 PM com.hazelcast.internal.server.tcp.TcpServerConnection
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Initialized new cluster connection between /192.168.1.58:47271 and /192.168.1.58:5701
+Dec 22, 2024 11:18:57 PM com.hazelcast.internal.cluster.ClusterService
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] 
+
+Members {size:2, ver:2} [
+	Member [192.168.1.58]:5701 - b1ab001f-ac93-4d85-8f8a-8493bd646ab0 this
+	Member [192.168.1.58]:5702 - d06235dd-66ea-48a8-b056-42eff2114c34
+]
+
+Dec 22, 2024 11:18:57 PM com.hazelcast.internal.cluster.ClusterService
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] 
+
+Members {size:2, ver:2} [
+	Member [192.168.1.58]:5701 - b1ab001f-ac93-4d85-8f8a-8493bd646ab0
+	Member [192.168.1.58]:5702 - d06235dd-66ea-48a8-b056-42eff2114c34 this
+]
+
+Dec 22, 2024 11:18:57 PM com.hazelcast.core.LifecycleService
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] [192.168.1.58]:5702 is STARTED
+Dec 22, 2024 11:18:57 PM com.hazelcast.system.logo
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] 
+	o    o     o     o---o   o--o o      o---o     o     o----o o--o--o
+	|    |    / \       /         |     /         / \    |         |   
+	o----o       o     o   o----o |    o             o   o----o    |   
+	|    |  *     \   /           |     \       *     \       |    |   
+	o    o *       o o---o   o--o o----o o---o *       o o----o    o   
+Dec 22, 2024 11:18:57 PM com.hazelcast.system
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Copyright (c) 2008-2024, Hazelcast, Inc. All Rights Reserved.
+Dec 22, 2024 11:18:57 PM com.hazelcast.system
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Hazelcast Platform 5.4.0 (20240415) starting at [192.168.1.58]:5703
+Dec 22, 2024 11:18:57 PM com.hazelcast.system
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Cluster name: my-cluster
+Dec 22, 2024 11:18:57 PM com.hazelcast.system
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed. For more information, see the documentation for Integrity Checker.
+Dec 22, 2024 11:18:57 PM com.hazelcast.system
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+Dec 22, 2024 11:18:57 PM com.hazelcast.system.security
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see 🔒 security recommendations and the status of current config.
+Dec 22, 2024 11:18:57 PM com.hazelcast.instance.impl.Node
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Using Multicast discovery
+Dec 22, 2024 11:18:57 PM com.hazelcast.cp.CPSubsystem
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] CP Subsystem is enabled with 3 members.
+Dec 22, 2024 11:18:57 PM com.hazelcast.internal.diagnostics.Diagnostics
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+Dec 22, 2024 11:18:57 PM com.hazelcast.core.LifecycleService
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] [192.168.1.58]:5703 is STARTING
+Dec 22, 2024 11:18:57 PM com.hazelcast.internal.cluster.impl.MulticastJoiner
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Trying to join to discovered node: [192.168.1.58]:5701
+Dec 22, 2024 11:18:57 PM com.hazelcast.internal.server.tcp.TcpServerConnection
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Initialized new cluster connection between /192.168.1.58:5701 and /192.168.1.58:58235
+Dec 22, 2024 11:18:57 PM com.hazelcast.internal.server.tcp.TcpServerConnection
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Initialized new cluster connection between /192.168.1.58:58235 and /192.168.1.58:5701
+Dec 22, 2024 11:18:58 PM com.hazelcast.internal.cluster.ClusterService
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] 
+
+Members {size:3, ver:3} [
+	Member [192.168.1.58]:5701 - b1ab001f-ac93-4d85-8f8a-8493bd646ab0 this
+	Member [192.168.1.58]:5702 - d06235dd-66ea-48a8-b056-42eff2114c34
+	Member [192.168.1.58]:5703 - 15e586b5-130c-49b2-9343-6a38d8f7dd15
+]
+
+Dec 22, 2024 11:18:58 PM com.hazelcast.internal.cluster.ClusterService
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] 
+
+Members {size:3, ver:3} [
+	Member [192.168.1.58]:5701 - b1ab001f-ac93-4d85-8f8a-8493bd646ab0
+	Member [192.168.1.58]:5702 - d06235dd-66ea-48a8-b056-42eff2114c34
+	Member [192.168.1.58]:5703 - 15e586b5-130c-49b2-9343-6a38d8f7dd15 this
+]
+
+Dec 22, 2024 11:18:58 PM com.hazelcast.internal.cluster.ClusterService
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] 
+
+Members {size:3, ver:3} [
+	Member [192.168.1.58]:5701 - b1ab001f-ac93-4d85-8f8a-8493bd646ab0
+	Member [192.168.1.58]:5702 - d06235dd-66ea-48a8-b056-42eff2114c34 this
+	Member [192.168.1.58]:5703 - 15e586b5-130c-49b2-9343-6a38d8f7dd15
+]
+
+Dec 22, 2024 11:18:58 PM com.hazelcast.internal.server.tcp.TcpServerConnection
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Initialized new cluster connection between /192.168.1.58:5703 and /192.168.1.58:56757
+Dec 22, 2024 11:18:58 PM com.hazelcast.internal.server.tcp.TcpServerConnection
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Initialized new cluster connection between /192.168.1.58:56757 and /192.168.1.58:5703
+Dec 22, 2024 11:18:58 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Connecting to /192.168.1.58:5702, timeout: 10000, bind-any: true
+Dec 22, 2024 11:18:58 PM com.hazelcast.internal.server.tcp.TcpServerConnection
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Initialized new cluster connection between /192.168.1.58:5702 and /192.168.1.58:38369
+Dec 22, 2024 11:18:58 PM com.hazelcast.internal.server.tcp.TcpServerConnection
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Initialized new cluster connection between /192.168.1.58:38369 and /192.168.1.58:5702
+Dec 22, 2024 11:18:58 PM com.hazelcast.cp.internal.RaftInvocationManager
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Replaced CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=-1}, members=[]} with CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=0}, members=[CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]}
+Dec 22, 2024 11:18:58 PM com.hazelcast.cp.internal.RaftService
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] RaftNode[CPGroupId{name='METADATA', seed=0, groupId=0}] is created with [RaftEndpoint{uuid='b1ab001f-ac93-4d85-8f8a-8493bd646ab0'}, RaftEndpoint{uuid='d06235dd-66ea-48a8-b056-42eff2114c34'}, RaftEndpoint{uuid='15e586b5-130c-49b2-9343-6a38d8f7dd15'}]
+Dec 22, 2024 11:18:58 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Status is set to: ACTIVE
+Dec 22, 2024 11:18:58 PM com.hazelcast.internal.partition.impl.PartitionStateManager
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Initializing cluster partition table arrangement...
+Dec 22, 2024 11:18:58 PM com.hazelcast.cp.internal.RaftInvocationManager
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Replaced CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=-1}, members=[]} with CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=0}, members=[CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]}
+Dec 22, 2024 11:18:58 PM com.hazelcast.cp.internal.RaftService
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] RaftNode[CPGroupId{name='METADATA', seed=0, groupId=0}] is created with [RaftEndpoint{uuid='b1ab001f-ac93-4d85-8f8a-8493bd646ab0'}, RaftEndpoint{uuid='d06235dd-66ea-48a8-b056-42eff2114c34'}, RaftEndpoint{uuid='15e586b5-130c-49b2-9343-6a38d8f7dd15'}]
+Dec 22, 2024 11:18:58 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Status is set to: ACTIVE
+Dec 22, 2024 11:18:58 PM com.hazelcast.cp.internal.RaftInvocationManager
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Replaced CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=-1}, members=[]} with CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=0}, members=[CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]}
+Dec 22, 2024 11:18:58 PM com.hazelcast.cp.internal.RaftService
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] RaftNode[CPGroupId{name='METADATA', seed=0, groupId=0}] is created with [RaftEndpoint{uuid='b1ab001f-ac93-4d85-8f8a-8493bd646ab0'}, RaftEndpoint{uuid='d06235dd-66ea-48a8-b056-42eff2114c34'}, RaftEndpoint{uuid='15e586b5-130c-49b2-9343-6a38d8f7dd15'}]
+Dec 22, 2024 11:18:58 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Status is set to: ACTIVE
+Dec 22, 2024 11:18:59 PM com.hazelcast.core.LifecycleService
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] [192.168.1.58]:5703 is STARTED
+Dec 22, 2024 11:18:59 PM com.labwork.HazelcastCounter runNoLockCounter
+INFO: Starting increments without locking...
+Dec 22, 2024 11:19:00 PM com.hazelcast.cp.internal.raft.impl.RaftNodeImpl$LeaderFailureDetectionTask(METADATA)
+WARNING: [192.168.1.58]:5701 [my-cluster] [5.4.0] We are FOLLOWER and there is no current leader. Will start new election round...
+Dec 22, 2024 11:19:00 PM com.hazelcast.cp.internal.raft.impl.task.PreVoteTask(METADATA)
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Pre-vote started for next term: 1, last log index: 0, last log term: 0
+Dec 22, 2024 11:19:00 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: METADATA(0), size:3, term:0, logIndex:0} [
+	CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701} - FOLLOWER this
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}
+]
+
+Dec 22, 2024 11:19:00 PM com.hazelcast.cp.internal.raft.impl.handler.PreVoteRequestHandlerTask(METADATA)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Granted pre-vote for PreVoteRequest{candidate=RaftEndpoint{uuid='b1ab001f-ac93-4d85-8f8a-8493bd646ab0'}, nextTerm=1, lastLogTerm=0, lastLogIndex=0}
+Dec 22, 2024 11:19:00 PM com.hazelcast.cp.internal.raft.impl.handler.PreVoteRequestHandlerTask(METADATA)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Granted pre-vote for PreVoteRequest{candidate=RaftEndpoint{uuid='b1ab001f-ac93-4d85-8f8a-8493bd646ab0'}, nextTerm=1, lastLogTerm=0, lastLogIndex=0}
+Dec 22, 2024 11:19:00 PM com.hazelcast.cp.internal.raft.impl.handler.PreVoteResponseHandlerTask(METADATA)
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Pre-vote granted from RaftEndpoint{uuid='15e586b5-130c-49b2-9343-6a38d8f7dd15'} for term: 1, number of votes: 2, majority: 2
+Dec 22, 2024 11:19:00 PM com.hazelcast.cp.internal.raft.impl.handler.PreVoteResponseHandlerTask(METADATA)
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] We have the majority during pre-vote phase. Let's start real election!
+Dec 22, 2024 11:19:00 PM com.hazelcast.cp.internal.raft.impl.task.LeaderElectionTask(METADATA)
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Leader election started for term: 1, last log index: 0, last log term: 0
+Dec 22, 2024 11:19:00 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: METADATA(0), size:3, term:1, logIndex:0} [
+	CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701} - CANDIDATE this
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}
+]
+
+Dec 22, 2024 11:19:00 PM com.hazelcast.cp.internal.raft.impl.handler.PreVoteResponseHandlerTask(METADATA)
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Ignored PreVoteResponse{voter=RaftEndpoint{uuid='d06235dd-66ea-48a8-b056-42eff2114c34'}, term=1, granted=true}. We are not FOLLOWER anymore.
+Dec 22, 2024 11:19:00 PM com.hazelcast.cp.internal.raft.impl.handler.VoteRequestHandlerTask(METADATA)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Moving to new term: 1 from current term: 0 after VoteRequest{candidate=RaftEndpoint{uuid='b1ab001f-ac93-4d85-8f8a-8493bd646ab0'}, term=1, lastLogTerm=0, lastLogIndex=0, disruptive=false}
+Dec 22, 2024 11:19:00 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: METADATA(0), size:3, term:1, logIndex:0} [
+	CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703} - FOLLOWER this
+]
+
+Dec 22, 2024 11:19:00 PM com.hazelcast.cp.internal.raft.impl.handler.VoteRequestHandlerTask(METADATA)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Granted vote for VoteRequest{candidate=RaftEndpoint{uuid='b1ab001f-ac93-4d85-8f8a-8493bd646ab0'}, term=1, lastLogTerm=0, lastLogIndex=0, disruptive=false}
+Dec 22, 2024 11:19:00 PM com.hazelcast.cp.internal.raft.impl.handler.VoteRequestHandlerTask(METADATA)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Moving to new term: 1 from current term: 0 after VoteRequest{candidate=RaftEndpoint{uuid='b1ab001f-ac93-4d85-8f8a-8493bd646ab0'}, term=1, lastLogTerm=0, lastLogIndex=0, disruptive=false}
+Dec 22, 2024 11:19:00 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: METADATA(0), size:3, term:1, logIndex:0} [
+	CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702} - FOLLOWER this
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}
+]
+
+Dec 22, 2024 11:19:00 PM com.hazelcast.cp.internal.raft.impl.handler.VoteRequestHandlerTask(METADATA)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Granted vote for VoteRequest{candidate=RaftEndpoint{uuid='b1ab001f-ac93-4d85-8f8a-8493bd646ab0'}, term=1, lastLogTerm=0, lastLogIndex=0, disruptive=false}
+Dec 22, 2024 11:19:00 PM com.hazelcast.cp.internal.raft.impl.handler.VoteResponseHandlerTask(METADATA)
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Vote granted from RaftEndpoint{uuid='15e586b5-130c-49b2-9343-6a38d8f7dd15'} for term: 1, number of votes: 2, majority: 2
+Dec 22, 2024 11:19:00 PM com.hazelcast.cp.internal.raft.impl.handler.VoteResponseHandlerTask(METADATA)
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] We are the LEADER!
+Dec 22, 2024 11:19:00 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: METADATA(0), size:3, term:1, logIndex:0} [
+	CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701} - LEADER this
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}
+]
+
+Dec 22, 2024 11:19:00 PM com.hazelcast.cp.internal.raft.impl.handler.VoteResponseHandlerTask(METADATA)
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Ignored VoteResponse{voter=RaftEndpoint{uuid='d06235dd-66ea-48a8-b056-42eff2114c34'}, term=1, granted=true}. We are not CANDIDATE anymore.
+Dec 22, 2024 11:19:00 PM com.hazelcast.cp.internal.raft.impl.handler.AppendRequestHandlerTask(METADATA)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Setting leader: RaftEndpoint{uuid='b1ab001f-ac93-4d85-8f8a-8493bd646ab0'}
+Dec 22, 2024 11:19:00 PM com.hazelcast.cp.internal.raft.impl.handler.AppendRequestHandlerTask(METADATA)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Setting leader: RaftEndpoint{uuid='b1ab001f-ac93-4d85-8f8a-8493bd646ab0'}
+Dec 22, 2024 11:19:00 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: METADATA(0), size:3, term:1, logIndex:0} [
+	CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701} - LEADER
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703} - FOLLOWER this
+]
+
+Dec 22, 2024 11:19:00 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: METADATA(0), size:3, term:1, logIndex:0} [
+	CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701} - LEADER
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702} - FOLLOWER this
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}
+]
+
+Dec 22, 2024 11:19:01 PM com.hazelcast.cp.internal.RaftInvocationManager
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Replaced CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=0}, members=[CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]} with CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=2}, members=[CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]}
+Dec 22, 2024 11:19:01 PM com.hazelcast.cp.internal.RaftInvocationManager
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Replaced CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=0}, members=[CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]} with CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=2}, members=[CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]}
+Dec 22, 2024 11:19:01 PM com.hazelcast.cp.internal.RaftInvocationManager
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Replaced CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=0}, members=[CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]} with CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=2}, members=[CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]}
+Dec 22, 2024 11:19:01 PM com.hazelcast.cp.internal.RaftInvocationManager
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Replaced CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=2}, members=[CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]} with CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=3}, members=[CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]}
+Dec 22, 2024 11:19:01 PM com.hazelcast.cp.internal.RaftInvocationManager
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Replaced CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=2}, members=[CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]} with CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=3}, members=[CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]}
+Dec 22, 2024 11:19:01 PM com.hazelcast.cp.internal.RaftInvocationManager
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Replaced CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=2}, members=[CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]} with CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=3}, members=[CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]}
+Dec 22, 2024 11:19:01 PM com.hazelcast.cp.internal.RaftInvocationManager
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Replaced CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=3}, members=[CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]} with CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=4}, members=[CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]}
+Dec 22, 2024 11:19:01 PM com.hazelcast.cp.internal.MetadataRaftGroupManager
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] CP Subsystem is initialized with: [CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]
+Dec 22, 2024 11:19:01 PM com.hazelcast.cp.internal.MetadataRaftGroupManager
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] CP Subsystem is initialized with: [CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]
+Dec 22, 2024 11:19:01 PM com.hazelcast.cp.internal.RaftInvocationManager
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Replaced CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=3}, members=[CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]} with CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=4}, members=[CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]}
+Dec 22, 2024 11:19:01 PM com.hazelcast.cp.internal.RaftInvocationManager
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Replaced CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=3}, members=[CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]} with CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=4}, members=[CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]}
+Dec 22, 2024 11:19:01 PM com.hazelcast.cp.internal.MetadataRaftGroupManager
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] CP Subsystem is initialized with: [CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]
+Dec 22, 2024 11:19:04 PM com.labwork.HazelcastCounter runNoLockCounter
+INFO: Finished (No Lock)
+Dec 22, 2024 11:19:04 PM com.labwork.HazelcastCounter runNoLockCounter
+INFO: Expected final value: 100000
+Dec 22, 2024 11:19:04 PM com.labwork.HazelcastCounter runNoLockCounter
+INFO: Actual final value:   23114
+Dec 22, 2024 11:19:04 PM com.labwork.HazelcastCounter runNoLockCounter
+INFO: Time taken: 4984 ms
+Dec 22, 2024 11:19:04 PM com.labwork.HazelcastCounter runPessimisticLockCounter
+INFO: Starting increments with pessimistic locking...
+Dec 22, 2024 11:19:33 PM com.labwork.HazelcastCounter runPessimisticLockCounter
+INFO: Finished (Pessimistic Lock)
+Dec 22, 2024 11:19:33 PM com.labwork.HazelcastCounter runPessimisticLockCounter
+INFO: Expected final value: 100000
+Dec 22, 2024 11:19:33 PM com.labwork.HazelcastCounter runPessimisticLockCounter
+INFO: Actual final value:   100000
+Dec 22, 2024 11:19:33 PM com.labwork.HazelcastCounter runPessimisticLockCounter
+INFO: Time taken: 29257 ms
+Dec 22, 2024 11:19:33 PM com.labwork.HazelcastCounter runOptimisticLockCounter
+INFO: Starting increments with optimistic locking...
+Dec 22, 2024 11:19:37 PM com.hazelcast.internal.diagnostics.HealthMonitor
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] The HealthMonitor has detected a high load on the system. For more detailed information,
+enable Diagnostics by adding the property -Dhazelcast.diagnostics.enabled=true
+Dec 22, 2024 11:19:37 PM com.hazelcast.internal.diagnostics.HealthMonitor
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] processors=8, physical.memory.total=13.6G, physical.memory.free=2.4G, swap.space.total=0, swap.space.free=0, heap.memory.used=107.9M, heap.memory.free=81.6M, heap.memory.total=192.0M, heap.memory.max=3.4G, heap.memory.used/total=56.21%, heap.memory.used/max=3.10%, minor.gc.count=64, minor.gc.time=153ms, major.gc.count=0, major.gc.time=0ms, unknown.gc.count=2, unknown.gc.time=1ms, load.process=0.00%, load.system=80.29%, load.systemAverage=1.74, thread.count=170, thread.peakCount=170, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=1469288, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=1, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=10, proxy.count=1, clientEndpoint.count=0, connection.active.count=2, client.connection.count=0, connection.count=2
+Dec 22, 2024 11:19:37 PM com.labwork.HazelcastCounter runOptimisticLockCounter
+INFO: Finished (Optimistic Lock)!
+Dec 22, 2024 11:19:37 PM com.labwork.HazelcastCounter runOptimisticLockCounter
+INFO: Expected final value: 100000
+Dec 22, 2024 11:19:37 PM com.labwork.HazelcastCounter runOptimisticLockCounter
+INFO: Actual final value:   100000
+Dec 22, 2024 11:19:37 PM com.labwork.HazelcastCounter runOptimisticLockCounter
+INFO: Time taken: 4300 ms
+Dec 22, 2024 11:19:37 PM com.hazelcast.cp.internal.MetadataRaftGroupManager
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] New CPGroupId{name='default', seed=0, groupId=551} is created with [CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}, CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}]
+Dec 22, 2024 11:19:37 PM com.hazelcast.cp.internal.MetadataRaftGroupManager
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] New CPGroupId{name='default', seed=0, groupId=551} is created with [CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}, CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}]
+Dec 22, 2024 11:19:37 PM com.hazelcast.cp.internal.MetadataRaftGroupManager
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] New CPGroupId{name='default', seed=0, groupId=551} is created with [CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}, CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}]
+Dec 22, 2024 11:19:37 PM com.hazelcast.cp.internal.RaftService
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] RaftNode[CPGroupId{name='default', seed=0, groupId=551}] is created with [RaftEndpoint{uuid='15e586b5-130c-49b2-9343-6a38d8f7dd15'}, RaftEndpoint{uuid='b1ab001f-ac93-4d85-8f8a-8493bd646ab0'}, RaftEndpoint{uuid='d06235dd-66ea-48a8-b056-42eff2114c34'}]
+Dec 22, 2024 11:19:37 PM com.hazelcast.cp.internal.raft.impl.RaftNode(default)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Status is set to: ACTIVE
+Dec 22, 2024 11:19:37 PM com.hazelcast.cp.internal.RaftService
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] RaftNode[CPGroupId{name='default', seed=0, groupId=551}] is created with [RaftEndpoint{uuid='15e586b5-130c-49b2-9343-6a38d8f7dd15'}, RaftEndpoint{uuid='b1ab001f-ac93-4d85-8f8a-8493bd646ab0'}, RaftEndpoint{uuid='d06235dd-66ea-48a8-b056-42eff2114c34'}]
+Dec 22, 2024 11:19:37 PM com.hazelcast.cp.internal.RaftService
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] RaftNode[CPGroupId{name='default', seed=0, groupId=551}] is created with [RaftEndpoint{uuid='15e586b5-130c-49b2-9343-6a38d8f7dd15'}, RaftEndpoint{uuid='b1ab001f-ac93-4d85-8f8a-8493bd646ab0'}, RaftEndpoint{uuid='d06235dd-66ea-48a8-b056-42eff2114c34'}]
+Dec 22, 2024 11:19:37 PM com.hazelcast.cp.internal.raft.impl.RaftNode(default)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Status is set to: ACTIVE
+Dec 22, 2024 11:19:37 PM com.hazelcast.cp.internal.raft.impl.RaftNode(default)
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Status is set to: ACTIVE
+Dec 22, 2024 11:19:39 PM com.hazelcast.cp.internal.raft.impl.RaftNodeImpl$LeaderFailureDetectionTask(default)
+WARNING: [192.168.1.58]:5702 [my-cluster] [5.4.0] We are FOLLOWER and there is no current leader. Will start new election round...
+Dec 22, 2024 11:19:39 PM com.hazelcast.cp.internal.raft.impl.task.PreVoteTask(default)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Pre-vote started for next term: 1, last log index: 0, last log term: 0
+Dec 22, 2024 11:19:39 PM com.hazelcast.cp.internal.raft.impl.RaftNode(default)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: default(551), size:3, term:0, logIndex:0} [
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}
+	CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702} - FOLLOWER this
+]
+
+Dec 22, 2024 11:19:39 PM com.hazelcast.cp.internal.raft.impl.handler.PreVoteRequestHandlerTask(default)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Granted pre-vote for PreVoteRequest{candidate=RaftEndpoint{uuid='d06235dd-66ea-48a8-b056-42eff2114c34'}, nextTerm=1, lastLogTerm=0, lastLogIndex=0}
+Dec 22, 2024 11:19:39 PM com.hazelcast.cp.internal.raft.impl.handler.PreVoteRequestHandlerTask(default)
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Granted pre-vote for PreVoteRequest{candidate=RaftEndpoint{uuid='d06235dd-66ea-48a8-b056-42eff2114c34'}, nextTerm=1, lastLogTerm=0, lastLogIndex=0}
+Dec 22, 2024 11:19:39 PM com.hazelcast.cp.internal.raft.impl.handler.PreVoteResponseHandlerTask(default)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Pre-vote granted from RaftEndpoint{uuid='15e586b5-130c-49b2-9343-6a38d8f7dd15'} for term: 1, number of votes: 2, majority: 2
+Dec 22, 2024 11:19:39 PM com.hazelcast.cp.internal.raft.impl.handler.PreVoteResponseHandlerTask(default)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] We have the majority during pre-vote phase. Let's start real election!
+Dec 22, 2024 11:19:39 PM com.hazelcast.cp.internal.raft.impl.task.LeaderElectionTask(default)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Leader election started for term: 1, last log index: 0, last log term: 0
+Dec 22, 2024 11:19:39 PM com.hazelcast.cp.internal.raft.impl.RaftNode(default)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: default(551), size:3, term:1, logIndex:0} [
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}
+	CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702} - CANDIDATE this
+]
+
+Dec 22, 2024 11:19:39 PM com.hazelcast.cp.internal.raft.impl.handler.PreVoteResponseHandlerTask(default)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Ignored PreVoteResponse{voter=RaftEndpoint{uuid='b1ab001f-ac93-4d85-8f8a-8493bd646ab0'}, term=1, granted=true}. We are not FOLLOWER anymore.
+Dec 22, 2024 11:19:39 PM com.hazelcast.cp.internal.raft.impl.handler.VoteRequestHandlerTask(default)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Moving to new term: 1 from current term: 0 after VoteRequest{candidate=RaftEndpoint{uuid='d06235dd-66ea-48a8-b056-42eff2114c34'}, term=1, lastLogTerm=0, lastLogIndex=0, disruptive=false}
+Dec 22, 2024 11:19:39 PM com.hazelcast.cp.internal.raft.impl.handler.VoteRequestHandlerTask(default)
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Moving to new term: 1 from current term: 0 after VoteRequest{candidate=RaftEndpoint{uuid='d06235dd-66ea-48a8-b056-42eff2114c34'}, term=1, lastLogTerm=0, lastLogIndex=0, disruptive=false}
+Dec 22, 2024 11:19:39 PM com.hazelcast.cp.internal.raft.impl.RaftNode(default)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: default(551), size:3, term:1, logIndex:0} [
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703} - FOLLOWER this
+	CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}
+]
+
+Dec 22, 2024 11:19:39 PM com.hazelcast.cp.internal.raft.impl.RaftNode(default)
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: default(551), size:3, term:1, logIndex:0} [
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}
+	CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701} - FOLLOWER this
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}
+]
+
+Dec 22, 2024 11:19:39 PM com.hazelcast.cp.internal.raft.impl.handler.VoteRequestHandlerTask(default)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Granted vote for VoteRequest{candidate=RaftEndpoint{uuid='d06235dd-66ea-48a8-b056-42eff2114c34'}, term=1, lastLogTerm=0, lastLogIndex=0, disruptive=false}
+Dec 22, 2024 11:19:39 PM com.hazelcast.cp.internal.raft.impl.handler.VoteRequestHandlerTask(default)
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Granted vote for VoteRequest{candidate=RaftEndpoint{uuid='d06235dd-66ea-48a8-b056-42eff2114c34'}, term=1, lastLogTerm=0, lastLogIndex=0, disruptive=false}
+Dec 22, 2024 11:19:39 PM com.hazelcast.cp.internal.raft.impl.handler.VoteResponseHandlerTask(default)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Vote granted from RaftEndpoint{uuid='15e586b5-130c-49b2-9343-6a38d8f7dd15'} for term: 1, number of votes: 2, majority: 2
+Dec 22, 2024 11:19:39 PM com.hazelcast.cp.internal.raft.impl.handler.VoteResponseHandlerTask(default)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] We are the LEADER!
+Dec 22, 2024 11:19:39 PM com.hazelcast.cp.internal.raft.impl.RaftNode(default)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: default(551), size:3, term:1, logIndex:0} [
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}
+	CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702} - LEADER this
+]
+
+Dec 22, 2024 11:19:39 PM com.hazelcast.cp.internal.raft.impl.handler.AppendRequestHandlerTask(default)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Setting leader: RaftEndpoint{uuid='d06235dd-66ea-48a8-b056-42eff2114c34'}
+Dec 22, 2024 11:19:39 PM com.hazelcast.cp.internal.raft.impl.handler.AppendRequestHandlerTask(default)
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Setting leader: RaftEndpoint{uuid='d06235dd-66ea-48a8-b056-42eff2114c34'}
+Dec 22, 2024 11:19:39 PM com.hazelcast.cp.internal.raft.impl.handler.VoteResponseHandlerTask(default)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Ignored VoteResponse{voter=RaftEndpoint{uuid='b1ab001f-ac93-4d85-8f8a-8493bd646ab0'}, term=1, granted=true}. We are not CANDIDATE anymore.
+Dec 22, 2024 11:19:39 PM com.hazelcast.cp.internal.raft.impl.RaftNode(default)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: default(551), size:3, term:1, logIndex:0} [
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703} - FOLLOWER this
+	CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702} - LEADER
+]
+
+Dec 22, 2024 11:19:39 PM com.hazelcast.cp.internal.raft.impl.RaftNode(default)
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: default(551), size:3, term:1, logIndex:0} [
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}
+	CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701} - FOLLOWER this
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702} - LEADER
+]
+
+Dec 22, 2024 11:19:40 PM com.labwork.HazelcastCounter runIAtomicLongCounter
+INFO: Starting increments with IAtomicLong...
+Dec 22, 2024 11:19:43 PM com.labwork.HazelcastCounter runIAtomicLongCounter
+INFO: Finished (IAtomicLong)!
+Dec 22, 2024 11:19:43 PM com.labwork.HazelcastCounter runIAtomicLongCounter
+INFO: Expected final value: 100000
+Dec 22, 2024 11:19:43 PM com.labwork.HazelcastCounter runIAtomicLongCounter
+INFO: Actual final value:   100000
+Dec 22, 2024 11:19:43 PM com.labwork.HazelcastCounter runIAtomicLongCounter
+INFO: Time taken: 2390 ms
+Dec 22, 2024 11:19:43 PM com.hazelcast.core.LifecycleService
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] [192.168.1.58]:5701 is SHUTTING_DOWN
+Dec 22, 2024 11:19:43 PM com.hazelcast.internal.partition.impl.MigrationManager
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Shutdown request of Member [192.168.1.58]:5701 - b1ab001f-ac93-4d85-8f8a-8493bd646ab0 this is handled
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.MetadataRaftGroupManager
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701} will be removed from [CPGroupId{name='METADATA', seed=0, groupId=0}, CPGroupId{name='default', seed=0, groupId=551}]
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.MetadataRaftGroupManager
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701} will be removed from [CPGroupId{name='METADATA', seed=0, groupId=0}, CPGroupId{name='default', seed=0, groupId=551}]
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.MetadataRaftGroupManager
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701} will be removed from [CPGroupId{name='METADATA', seed=0, groupId=0}, CPGroupId{name='default', seed=0, groupId=551}]
+Dec 22, 2024 11:19:43 PM com.hazelcast.internal.partition.impl.MigrationManager
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Repartitioning cluster data. Migration tasks count: 182
+Dec 22, 2024 11:19:43 PM com.hazelcast.internal.partition.impl.MigrationManager
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] All migration tasks have been completed. (repartitionTime=Sun Dec 22 23:19:43 EET 2024, plannedMigrations=182, completedMigrations=182, remainingMigrations=0, totalCompletedMigrations=182)
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.task.MembershipChangeTask(METADATA)
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] New members after REMOVE RaftEndpoint{uuid='b1ab001f-ac93-4d85-8f8a-8493bd646ab0'} -> [RaftEndpoint{uuid='d06235dd-66ea-48a8-b056-42eff2114c34'}, RaftEndpoint{uuid='15e586b5-130c-49b2-9343-6a38d8f7dd15'}]
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.task.MembershipChangeTask(default)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] New members after REMOVE RaftEndpoint{uuid='b1ab001f-ac93-4d85-8f8a-8493bd646ab0'} -> [RaftEndpoint{uuid='15e586b5-130c-49b2-9343-6a38d8f7dd15'}, RaftEndpoint{uuid='d06235dd-66ea-48a8-b056-42eff2114c34'}]
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+WARNING: [192.168.1.58]:5701 [my-cluster] [5.4.0] Status is set to: UPDATING_GROUP_MEMBER_LIST
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.RaftNode(default)
+WARNING: [192.168.1.58]:5702 [my-cluster] [5.4.0] Status is set to: UPDATING_GROUP_MEMBER_LIST
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: METADATA(0), size:2, term:1, logIndex:7} [
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}
+]
+
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.RaftNode(default)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: default(551), size:2, term:1, logIndex:100003} [
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702} - LEADER this
+]
+
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+WARNING: [192.168.1.58]:5702 [my-cluster] [5.4.0] Status is set to: UPDATING_GROUP_MEMBER_LIST
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+WARNING: [192.168.1.58]:5703 [my-cluster] [5.4.0] Status is set to: UPDATING_GROUP_MEMBER_LIST
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+WARNING: [192.168.1.58]:5701 [my-cluster] [5.4.0] Status is set to: STEPPED_DOWN
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: METADATA(0), size:2, term:1, logIndex:7} [
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702} - FOLLOWER this
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}
+]
+
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: METADATA(0), size:2, term:1, logIndex:7} [
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703} - FOLLOWER this
+]
+
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.RaftNode(default)
+WARNING: [192.168.1.58]:5703 [my-cluster] [5.4.0] Status is set to: UPDATING_GROUP_MEMBER_LIST
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.RaftNode(default)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: default(551), size:2, term:1, logIndex:100003} [
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703} - FOLLOWER this
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702} - LEADER
+]
+
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.RaftNode(default)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Status is set to: ACTIVE
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.RaftNode(default)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Status is set to: ACTIVE
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+WARNING: [192.168.1.58]:5701 [my-cluster] [5.4.0] Invalidated 1 futures until log index: 6
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Status is set to: ACTIVE
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Status is set to: ACTIVE
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.RaftNodeImpl$LeaderFailureDetectionTask(METADATA)
+WARNING: [192.168.1.58]:5703 [my-cluster] [5.4.0] Current leader RaftEndpoint{uuid='b1ab001f-ac93-4d85-8f8a-8493bd646ab0'} is not member anymore. Will start new election round...
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: METADATA(0), size:2, term:1, logIndex:7} [
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703} - FOLLOWER this
+]
+
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.task.PreVoteTask(METADATA)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Pre-vote started for next term: 2, last log index: 7, last log term: 1
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: METADATA(0), size:2, term:1, logIndex:7} [
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703} - FOLLOWER this
+]
+
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.handler.PreVoteRequestHandlerTask(METADATA)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Rejecting PreVoteRequest{candidate=RaftEndpoint{uuid='15e586b5-130c-49b2-9343-6a38d8f7dd15'}, nextTerm=2, lastLogTerm=1, lastLogIndex=7} since received append entries recently.
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.RaftNodeImpl$LeaderFailureDetectionTask(METADATA)
+WARNING: [192.168.1.58]:5702 [my-cluster] [5.4.0] Current leader RaftEndpoint{uuid='b1ab001f-ac93-4d85-8f8a-8493bd646ab0'} is not member anymore. Will start new election round...
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: METADATA(0), size:2, term:1, logIndex:7} [
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702} - FOLLOWER this
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}
+]
+
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.task.PreVoteTask(METADATA)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Pre-vote started for next term: 2, last log index: 7, last log term: 1
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: METADATA(0), size:2, term:1, logIndex:7} [
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702} - FOLLOWER this
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}
+]
+
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.handler.PreVoteRequestHandlerTask(METADATA)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Granted pre-vote for PreVoteRequest{candidate=RaftEndpoint{uuid='d06235dd-66ea-48a8-b056-42eff2114c34'}, nextTerm=2, lastLogTerm=1, lastLogIndex=7}
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.handler.PreVoteResponseHandlerTask(METADATA)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Pre-vote granted from RaftEndpoint{uuid='15e586b5-130c-49b2-9343-6a38d8f7dd15'} for term: 2, number of votes: 2, majority: 2
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.handler.PreVoteResponseHandlerTask(METADATA)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] We have the majority during pre-vote phase. Let's start real election!
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.task.LeaderElectionTask(METADATA)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Leader election started for term: 2, last log index: 7, last log term: 1
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: METADATA(0), size:2, term:2, logIndex:7} [
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702} - CANDIDATE this
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}
+]
+
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.handler.VoteRequestHandlerTask(METADATA)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Moving to new term: 2 from current term: 1 after VoteRequest{candidate=RaftEndpoint{uuid='d06235dd-66ea-48a8-b056-42eff2114c34'}, term=2, lastLogTerm=1, lastLogIndex=7, disruptive=false}
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: METADATA(0), size:2, term:2, logIndex:7} [
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703} - FOLLOWER this
+]
+
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.handler.VoteRequestHandlerTask(METADATA)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Granted vote for VoteRequest{candidate=RaftEndpoint{uuid='d06235dd-66ea-48a8-b056-42eff2114c34'}, term=2, lastLogTerm=1, lastLogIndex=7, disruptive=false}
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.handler.VoteResponseHandlerTask(METADATA)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Vote granted from RaftEndpoint{uuid='15e586b5-130c-49b2-9343-6a38d8f7dd15'} for term: 2, number of votes: 2, majority: 2
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.handler.VoteResponseHandlerTask(METADATA)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] We are the LEADER!
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: METADATA(0), size:2, term:2, logIndex:7} [
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702} - LEADER this
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}
+]
+
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.handler.AppendRequestHandlerTask(METADATA)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Setting leader: RaftEndpoint{uuid='d06235dd-66ea-48a8-b056-42eff2114c34'}
+Dec 22, 2024 11:19:43 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: METADATA(0), size:2, term:2, logIndex:7} [
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702} - LEADER
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703} - FOLLOWER this
+]
+
+Dec 22, 2024 11:19:44 PM com.hazelcast.cp.internal.raft.impl.task.MembershipChangeTask(default)
+SEVERE: [192.168.1.58]:5702 [my-cluster] [5.4.0] Cannot REMOVE RaftEndpoint{uuid='b1ab001f-ac93-4d85-8f8a-8493bd646ab0'} because expected members commit index: 0 is different than group members commit index: 100003
+Dec 22, 2024 11:19:44 PM com.hazelcast.cp.internal.raft.impl.task.MembershipChangeTask(METADATA)
+SEVERE: [192.168.1.58]:5702 [my-cluster] [5.4.0] Cannot REMOVE RaftEndpoint{uuid='b1ab001f-ac93-4d85-8f8a-8493bd646ab0'} because expected members commit index: 0 is different than group members commit index: 7
+Dec 22, 2024 11:19:44 PM com.hazelcast.cp.internal.RaftInvocationManager
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Replaced CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=4}, members=[CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]} with CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=9}, members=[CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]}
+Dec 22, 2024 11:19:44 PM com.hazelcast.cp.internal.MetadataRaftGroupManager
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701} is removed from CP Subsystem.
+Dec 22, 2024 11:19:44 PM com.hazelcast.cp.internal.RaftInvocationManager
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Replaced CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=4}, members=[CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]} with CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=9}, members=[CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]}
+Dec 22, 2024 11:19:44 PM com.hazelcast.cp.internal.RaftInvocationManager
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Replaced CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=4}, members=[CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701}, CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]} with CPMembersContainer{version=CPMembersVersion{groupIdSeed=0, version=9}, members=[CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}, CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}]}
+Dec 22, 2024 11:19:44 PM com.hazelcast.cp.internal.MetadataRaftGroupManager
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] CPMember{uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, address=[192.168.1.58]:5701} is removed from CP Subsystem.
+Dec 22, 2024 11:19:44 PM com.hazelcast.cp.internal.MetadataRaftGroupManager
+WARNING: [192.168.1.58]:5702 [my-cluster] [5.4.0] Cannot apply CP membership changes: {CPGroupId{name='METADATA', seed=0, groupId=0}=BiTuple{element1=0, element2=7}, CPGroupId{name='default', seed=0, groupId=551}=BiTuple{element1=0, element2=100003}} since there is no membership change context!
+Dec 22, 2024 11:19:44 PM com.hazelcast.cp.internal.raftop.metadata.CompleteRaftGroupMembershipChangesOp
+WARNING: [192.168.1.58]:5702 [my-cluster] [5.4.0] Cannot apply CP membership changes: {CPGroupId{name='METADATA', seed=0, groupId=0}=BiTuple{element1=0, element2=7}, CPGroupId{name='default', seed=0, groupId=551}=BiTuple{element1=0, element2=100003}} since there is no membership change context!
+java.lang.IllegalStateException: Cannot apply CP membership changes: {CPGroupId{name='METADATA', seed=0, groupId=0}=BiTuple{element1=0, element2=7}, CPGroupId{name='default', seed=0, groupId=551}=BiTuple{element1=0, element2=100003}} since there is no membership change context!
+	at com.hazelcast.cp.internal.MetadataRaftGroupManager.completeRaftGroupMembershipChanges(MetadataRaftGroupManager.java:785)
+	at com.hazelcast.cp.internal.raftop.metadata.CompleteRaftGroupMembershipChangesOp.run(CompleteRaftGroupMembershipChangesOp.java:52)
+	at com.hazelcast.cp.internal.raftop.metadata.MetadataRaftGroupOp.run(MetadataRaftGroupOp.java:38)
+	at com.hazelcast.cp.internal.NodeEngineRaftIntegration.runOperation(NodeEngineRaftIntegration.java:219)
+	at com.hazelcast.cp.internal.raft.impl.RaftNodeImpl.applyLogEntry(RaftNodeImpl.java:852)
+	at com.hazelcast.cp.internal.raft.impl.RaftNodeImpl.applyLogEntries(RaftNodeImpl.java:795)
+	at com.hazelcast.cp.internal.raft.impl.RaftNodeImpl.commitEntries(RaftNodeImpl.java:1303)
+	at com.hazelcast.cp.internal.raft.impl.RaftNodeImpl.tryAdvanceCommitIndex(RaftNodeImpl.java:1287)
+	at com.hazelcast.cp.internal.raft.impl.handler.AppendSuccessResponseHandlerTask.handleResponse(AppendSuccessResponseHandlerTask.java:71)
+	at com.hazelcast.cp.internal.raft.impl.handler.AbstractResponseHandlerTask.innerRun(AbstractResponseHandlerTask.java:43)
+	at com.hazelcast.cp.internal.raft.impl.task.RaftNodeStatusAwareTask.run(RaftNodeStatusAwareTask.java:52)
+	at com.hazelcast.cp.internal.NodeEngineRaftIntegration.execute(NodeEngineRaftIntegration.java:114)
+	at com.hazelcast.cp.internal.raft.impl.RaftNodeImpl.execute(RaftNodeImpl.java:886)
+	at com.hazelcast.cp.internal.raft.impl.RaftNodeImpl.handleAppendResponse(RaftNodeImpl.java:403)
+	at com.hazelcast.cp.internal.RaftService.handleAppendResponse(RaftService.java:792)
+	at com.hazelcast.cp.internal.operation.integration.AppendSuccessResponseOp.run(AppendSuccessResponseOp.java:48)
+	at com.hazelcast.spi.impl.operationservice.Operation.call(Operation.java:193)
+	at com.hazelcast.spi.impl.operationservice.impl.OperationRunnerImpl.call(OperationRunnerImpl.java:294)
+	at com.hazelcast.spi.impl.operationservice.impl.OperationRunnerImpl.run(OperationRunnerImpl.java:265)
+	at com.hazelcast.spi.impl.operationservice.impl.OperationRunnerImpl.run(OperationRunnerImpl.java:497)
+	at com.hazelcast.spi.impl.operationexecutor.impl.OperationThread.process(OperationThread.java:185)
+	at com.hazelcast.spi.impl.operationexecutor.impl.OperationThread.process(OperationThread.java:141)
+	at com.hazelcast.spi.impl.operationexecutor.impl.OperationThread.loop(OperationThread.java:134)
+	at com.hazelcast.spi.impl.operationexecutor.impl.OperationThread.executeRun(OperationThread.java:115)
+	at com.hazelcast.internal.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:111)
+
+Dec 22, 2024 11:19:44 PM com.hazelcast.instance.impl.Node
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Shutting down multicast service...
+Dec 22, 2024 11:19:44 PM com.hazelcast.cp.internal.MetadataRaftGroupManager
+WARNING: [192.168.1.58]:5703 [my-cluster] [5.4.0] Cannot apply CP membership changes: {CPGroupId{name='METADATA', seed=0, groupId=0}=BiTuple{element1=0, element2=7}, CPGroupId{name='default', seed=0, groupId=551}=BiTuple{element1=0, element2=100003}} since there is no membership change context!
+Dec 22, 2024 11:19:44 PM com.hazelcast.cp.internal.raftop.metadata.CompleteRaftGroupMembershipChangesOp
+WARNING: [192.168.1.58]:5703 [my-cluster] [5.4.0] Cannot apply CP membership changes: {CPGroupId{name='METADATA', seed=0, groupId=0}=BiTuple{element1=0, element2=7}, CPGroupId{name='default', seed=0, groupId=551}=BiTuple{element1=0, element2=100003}} since there is no membership change context!
+java.lang.IllegalStateException: Cannot apply CP membership changes: {CPGroupId{name='METADATA', seed=0, groupId=0}=BiTuple{element1=0, element2=7}, CPGroupId{name='default', seed=0, groupId=551}=BiTuple{element1=0, element2=100003}} since there is no membership change context!
+	at com.hazelcast.cp.internal.MetadataRaftGroupManager.completeRaftGroupMembershipChanges(MetadataRaftGroupManager.java:785)
+	at com.hazelcast.cp.internal.raftop.metadata.CompleteRaftGroupMembershipChangesOp.run(CompleteRaftGroupMembershipChangesOp.java:52)
+	at com.hazelcast.cp.internal.raftop.metadata.MetadataRaftGroupOp.run(MetadataRaftGroupOp.java:38)
+	at com.hazelcast.cp.internal.NodeEngineRaftIntegration.runOperation(NodeEngineRaftIntegration.java:219)
+	at com.hazelcast.cp.internal.raft.impl.RaftNodeImpl.applyLogEntry(RaftNodeImpl.java:852)
+	at com.hazelcast.cp.internal.raft.impl.RaftNodeImpl.applyLogEntries(RaftNodeImpl.java:795)
+	at com.hazelcast.cp.internal.raft.impl.handler.AppendRequestHandlerTask.innerRun(AppendRequestHandlerTask.java:212)
+	at com.hazelcast.cp.internal.raft.impl.task.RaftNodeStatusAwareTask.run(RaftNodeStatusAwareTask.java:52)
+	at com.hazelcast.cp.internal.NodeEngineRaftIntegration.execute(NodeEngineRaftIntegration.java:114)
+	at com.hazelcast.cp.internal.raft.impl.RaftNodeImpl.execute(RaftNodeImpl.java:886)
+	at com.hazelcast.cp.internal.raft.impl.RaftNodeImpl.handleAppendRequest(RaftNodeImpl.java:398)
+	at com.hazelcast.cp.internal.RaftService.handleAppendEntries(RaftService.java:785)
+	at com.hazelcast.cp.internal.operation.integration.AppendRequestOp.run(AppendRequestOp.java:46)
+	at com.hazelcast.spi.impl.operationservice.Operation.call(Operation.java:193)
+	at com.hazelcast.spi.impl.operationservice.impl.OperationRunnerImpl.call(OperationRunnerImpl.java:294)
+	at com.hazelcast.spi.impl.operationservice.impl.OperationRunnerImpl.run(OperationRunnerImpl.java:265)
+	at com.hazelcast.spi.impl.operationservice.impl.OperationRunnerImpl.run(OperationRunnerImpl.java:497)
+	at com.hazelcast.spi.impl.operationexecutor.impl.OperationThread.process(OperationThread.java:185)
+	at com.hazelcast.spi.impl.operationexecutor.impl.OperationThread.process(OperationThread.java:141)
+	at com.hazelcast.spi.impl.operationexecutor.impl.OperationThread.loop(OperationThread.java:134)
+	at com.hazelcast.spi.impl.operationexecutor.impl.OperationThread.executeRun(OperationThread.java:115)
+	at com.hazelcast.internal.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:111)
+
+Dec 22, 2024 11:19:44 PM com.hazelcast.instance.impl.Node
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Shutting down connection manager...
+Dec 22, 2024 11:19:44 PM com.hazelcast.cp.internal.RaftGroupMembershipManager
+SEVERE: [192.168.1.58]:5702 [my-cluster] [5.4.0] Cannot commit CP group membership changes: {CPGroupId{name='METADATA', seed=0, groupId=0}=BiTuple{element1=0, element2=7}, CPGroupId{name='default', seed=0, groupId=551}=BiTuple{element1=0, element2=100003}}
+java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Cannot apply CP membership changes: {CPGroupId{name='METADATA', seed=0, groupId=0}=BiTuple{element1=0, element2=7}, CPGroupId{name='default', seed=0, groupId=551}=BiTuple{element1=0, element2=100003}} since there is no membership change context!
+	at com.hazelcast.spi.impl.operationservice.impl.InvocationFuture.returnOrThrowWithGetConventions(InvocationFuture.java:121)
+	at com.hazelcast.spi.impl.operationservice.impl.InvocationFuture.resolveAndThrowIfException(InvocationFuture.java:100)
+	at com.hazelcast.spi.impl.AbstractInvocationFuture.get(AbstractInvocationFuture.java:618)
+	at com.hazelcast.cp.internal.RaftGroupMembershipManager$RaftGroupMembershipChangeHandlerTask.completeMembershipChanges(RaftGroupMembershipManager.java:447)
+	at com.hazelcast.cp.internal.RaftGroupMembershipManager$RaftGroupMembershipChangeHandlerTask.run(RaftGroupMembershipManager.java:273)
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:77)
+	at com.hazelcast.internal.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:220)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+	at com.hazelcast.internal.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:76)
+	at com.hazelcast.internal.util.executor.PoolExecutorThreadFactory$ManagedThread.executeRun(PoolExecutorThreadFactory.java:74)
+	at com.hazelcast.internal.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:111)
+Caused by: java.lang.IllegalStateException: Cannot apply CP membership changes: {CPGroupId{name='METADATA', seed=0, groupId=0}=BiTuple{element1=0, element2=7}, CPGroupId{name='default', seed=0, groupId=551}=BiTuple{element1=0, element2=100003}} since there is no membership change context!
+	at com.hazelcast.cp.internal.MetadataRaftGroupManager.completeRaftGroupMembershipChanges(MetadataRaftGroupManager.java:785)
+	at com.hazelcast.cp.internal.raftop.metadata.CompleteRaftGroupMembershipChangesOp.run(CompleteRaftGroupMembershipChangesOp.java:52)
+	at com.hazelcast.cp.internal.raftop.metadata.MetadataRaftGroupOp.run(MetadataRaftGroupOp.java:38)
+	at com.hazelcast.cp.internal.NodeEngineRaftIntegration.runOperation(NodeEngineRaftIntegration.java:219)
+	at com.hazelcast.cp.internal.raft.impl.RaftNodeImpl.applyLogEntry(RaftNodeImpl.java:852)
+	at com.hazelcast.cp.internal.raft.impl.RaftNodeImpl.applyLogEntries(RaftNodeImpl.java:795)
+	at com.hazelcast.cp.internal.raft.impl.RaftNodeImpl.commitEntries(RaftNodeImpl.java:1303)
+	at com.hazelcast.cp.internal.raft.impl.RaftNodeImpl.tryAdvanceCommitIndex(RaftNodeImpl.java:1287)
+	at com.hazelcast.cp.internal.raft.impl.handler.AppendSuccessResponseHandlerTask.handleResponse(AppendSuccessResponseHandlerTask.java:71)
+	at com.hazelcast.cp.internal.raft.impl.handler.AbstractResponseHandlerTask.innerRun(AbstractResponseHandlerTask.java:43)
+	at com.hazelcast.cp.internal.raft.impl.task.RaftNodeStatusAwareTask.run(RaftNodeStatusAwareTask.java:52)
+	at com.hazelcast.cp.internal.NodeEngineRaftIntegration.execute(NodeEngineRaftIntegration.java:114)
+	at com.hazelcast.cp.internal.raft.impl.RaftNodeImpl.execute(RaftNodeImpl.java:886)
+	at com.hazelcast.cp.internal.raft.impl.RaftNodeImpl.handleAppendResponse(RaftNodeImpl.java:403)
+	at com.hazelcast.cp.internal.RaftService.handleAppendResponse(RaftService.java:792)
+	at com.hazelcast.cp.internal.operation.integration.AppendSuccessResponseOp.run(AppendSuccessResponseOp.java:48)
+	at com.hazelcast.spi.impl.operationservice.Operation.call(Operation.java:193)
+	at com.hazelcast.spi.impl.operationservice.impl.OperationRunnerImpl.call(OperationRunnerImpl.java:294)
+	at com.hazelcast.spi.impl.operationservice.impl.OperationRunnerImpl.run(OperationRunnerImpl.java:265)
+	at com.hazelcast.spi.impl.operationservice.impl.OperationRunnerImpl.run(OperationRunnerImpl.java:497)
+	at com.hazelcast.spi.impl.operationexecutor.impl.OperationThread.process(OperationThread.java:185)
+	at com.hazelcast.spi.impl.operationexecutor.impl.OperationThread.process(OperationThread.java:141)
+	at com.hazelcast.spi.impl.operationexecutor.impl.OperationThread.loop(OperationThread.java:134)
+	at com.hazelcast.spi.impl.operationexecutor.impl.OperationThread.executeRun(OperationThread.java:115)
+	at com.hazelcast.internal.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:111)
+	at ------ submitted from ------.()
+	at com.hazelcast.internal.util.ExceptionUtil.cloneExceptionWithFixedAsyncStackTrace(ExceptionUtil.java:348)
+	at com.hazelcast.spi.impl.operationservice.impl.InvocationFuture.returnOrThrowWithGetConventions(InvocationFuture.java:112)
+	... 12 more
+
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnection
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Connection[id=1, /192.168.1.58:5701->/192.168.1.58:47271, qualifier=null, endpoint=[192.168.1.58]:5702, remoteUuid=d06235dd-66ea-48a8-b056-42eff2114c34, alive=false, connectionType=MEMBER, planeIndex=0] closed. Reason: TcpServer is stopping
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnection
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Connection[id=1, /192.168.1.58:47271->/192.168.1.58:5701, qualifier=null, endpoint=[192.168.1.58]:5701, remoteUuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, alive=false, connectionType=MEMBER, planeIndex=0] closed. Reason: Connection closed by the other side
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnection
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Connection[id=2, /192.168.1.58:5701->/192.168.1.58:58235, qualifier=null, endpoint=[192.168.1.58]:5703, remoteUuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, alive=false, connectionType=MEMBER, planeIndex=0] closed. Reason: TcpServer is stopping
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnection
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Connection[id=1, /192.168.1.58:58235->/192.168.1.58:5701, qualifier=null, endpoint=[192.168.1.58]:5701, remoteUuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, alive=false, connectionType=MEMBER, planeIndex=0] closed. Reason: Connection closed by the other side
+Dec 22, 2024 11:19:44 PM com.hazelcast.instance.impl.Node
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Shutting down node engine...
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Connecting to /192.168.1.58:5701, timeout: 10000, bind-any: true
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Connecting to /192.168.1.58:5701, timeout: 10000, bind-any: true
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Could not connect to: /192.168.1.58:5701. Reason: IOException[Connection refused to address /192.168.1.58:5701]
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Could not connect to: /192.168.1.58:5701. Reason: IOException[Connection refused to address /192.168.1.58:5701]
+Dec 22, 2024 11:19:44 PM com.hazelcast.instance.impl.NodeExtension
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Destroying node NodeExtension.
+Dec 22, 2024 11:19:44 PM com.hazelcast.instance.impl.Node
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] Hazelcast Shutdown is completed in 1499 ms.
+Dec 22, 2024 11:19:44 PM com.hazelcast.core.LifecycleService
+INFO: [192.168.1.58]:5701 [my-cluster] [5.4.0] [192.168.1.58]:5701 is SHUTDOWN
+Dec 22, 2024 11:19:44 PM com.hazelcast.core.LifecycleService
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] [192.168.1.58]:5702 is SHUTTING_DOWN
+Dec 22, 2024 11:19:44 PM com.hazelcast.cp.internal.MetadataRaftGroupManager
+WARNING: [192.168.1.58]:5702 [my-cluster] [5.4.0] CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702} is directly removed as there are only 2 CP members.
+Dec 22, 2024 11:19:44 PM com.hazelcast.cp.internal.MetadataRaftGroupManager
+WARNING: [192.168.1.58]:5703 [my-cluster] [5.4.0] CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702} is directly removed as there are only 2 CP members.
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Connecting to /192.168.1.58:5701, timeout: 10000, bind-any: true
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Connecting to /192.168.1.58:5701, timeout: 10000, bind-any: true
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Could not connect to: /192.168.1.58:5701. Reason: IOException[Connection refused to address /192.168.1.58:5701]
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Could not connect to: /192.168.1.58:5701. Reason: IOException[Connection refused to address /192.168.1.58:5701]
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Connecting to /192.168.1.58:5701, timeout: 10000, bind-any: true
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Could not connect to: /192.168.1.58:5701. Reason: IOException[Connection refused to address /192.168.1.58:5701]
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Connecting to /192.168.1.58:5701, timeout: 10000, bind-any: true
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Connecting to /192.168.1.58:5701, timeout: 10000, bind-any: true
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Could not connect to: /192.168.1.58:5701. Reason: IOException[Connection refused to address /192.168.1.58:5701]
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Could not connect to: /192.168.1.58:5701. Reason: IOException[Connection refused to address /192.168.1.58:5701]
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Connecting to /192.168.1.58:5701, timeout: 10000, bind-any: true
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Could not connect to: /192.168.1.58:5701. Reason: IOException[Connection refused to address /192.168.1.58:5701]
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Connecting to /192.168.1.58:5701, timeout: 10000, bind-any: true
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Could not connect to: /192.168.1.58:5701. Reason: IOException[Connection refused to address /192.168.1.58:5701]
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Connecting to /192.168.1.58:5701, timeout: 10000, bind-any: true
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Connecting to /192.168.1.58:5701, timeout: 10000, bind-any: true
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Could not connect to: /192.168.1.58:5701. Reason: IOException[Connection refused to address /192.168.1.58:5701]
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Could not connect to: /192.168.1.58:5701. Reason: IOException[Connection refused to address /192.168.1.58:5701]
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnectionErrorHandler
+WARNING: [192.168.1.58]:5702 [my-cluster] [5.4.0] Removing connection to endpoint [192.168.1.58]:5701 Cause => java.io.IOException {Connection refused to address /192.168.1.58:5701}, Error-Count: 5
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnectionErrorHandler
+WARNING: [192.168.1.58]:5703 [my-cluster] [5.4.0] Removing connection to endpoint [192.168.1.58]:5701 Cause => java.io.IOException {Connection refused to address /192.168.1.58:5701}, Error-Count: 5
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.cluster.impl.MembershipManager
+WARNING: [192.168.1.58]:5703 [my-cluster] [5.4.0] Member [192.168.1.58]:5701 - b1ab001f-ac93-4d85-8f8a-8493bd646ab0 is suspected to be dead for reason: No connection
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.cluster.impl.MembershipManager
+WARNING: [192.168.1.58]:5702 [my-cluster] [5.4.0] Member [192.168.1.58]:5701 - b1ab001f-ac93-4d85-8f8a-8493bd646ab0 is suspected to be dead for reason: No connection
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.cluster.impl.MembershipManager
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Starting mastership claim process...
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.cluster.impl.MembershipManager
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Local MembersView{version=3, members=[MemberInfo{address=[192.168.1.58]:5701, uuid=b1ab001f-ac93-4d85-8f8a-8493bd646ab0, cpMemberUUID=null, liteMember=false, memberListJoinVersion=1}, MemberInfo{address=[192.168.1.58]:5702, uuid=d06235dd-66ea-48a8-b056-42eff2114c34, cpMemberUUID=null, liteMember=false, memberListJoinVersion=2}, MemberInfo{address=[192.168.1.58]:5703, uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, cpMemberUUID=null, liteMember=false, memberListJoinVersion=3}]} with suspected members: [Member [192.168.1.58]:5701 - b1ab001f-ac93-4d85-8f8a-8493bd646ab0] and initial addresses to ask: [Member [192.168.1.58]:5703 - 15e586b5-130c-49b2-9343-6a38d8f7dd15]
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.cluster.ClusterService
+WARNING: [192.168.1.58]:5703 [my-cluster] [5.4.0] Mastership of [192.168.1.58]:5702 is accepted. Response: MembersView{version=3, members=[MemberInfo{address=[192.168.1.58]:5702, uuid=d06235dd-66ea-48a8-b056-42eff2114c34, cpMemberUUID=null, liteMember=false, memberListJoinVersion=2}, MemberInfo{address=[192.168.1.58]:5703, uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, cpMemberUUID=null, liteMember=false, memberListJoinVersion=3}]}
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Connecting to /192.168.1.58:5701, timeout: 10000, bind-any: true
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Could not connect to: /192.168.1.58:5701. Reason: IOException[Connection refused to address /192.168.1.58:5701]
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.cluster.ClusterService
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] 
+
+Members {size:2, ver:4} [
+	Member [192.168.1.58]:5702 - d06235dd-66ea-48a8-b056-42eff2114c34 this
+	Member [192.168.1.58]:5703 - 15e586b5-130c-49b2-9343-6a38d8f7dd15
+]
+
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.cluster.impl.MembershipManager
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Mastership is claimed with: MembersView{version=4, members=[MemberInfo{address=[192.168.1.58]:5702, uuid=d06235dd-66ea-48a8-b056-42eff2114c34, cpMemberUUID=null, liteMember=false, memberListJoinVersion=2}, MemberInfo{address=[192.168.1.58]:5703, uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, cpMemberUUID=null, liteMember=false, memberListJoinVersion=3}]}
+Dec 22, 2024 11:19:44 PM com.hazelcast.internal.cluster.ClusterService
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] 
+
+Members {size:2, ver:4} [
+	Member [192.168.1.58]:5702 - d06235dd-66ea-48a8-b056-42eff2114c34
+	Member [192.168.1.58]:5703 - 15e586b5-130c-49b2-9343-6a38d8f7dd15 this
+]
+
+Dec 22, 2024 11:19:44 PM com.hazelcast.transaction.TransactionManagerService
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Committing/rolling-back live transactions of [192.168.1.58]:5701, UUID: b1ab001f-ac93-4d85-8f8a-8493bd646ab0
+Dec 22, 2024 11:19:45 PM com.hazelcast.internal.partition.InternalPartitionService
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Fetching partition tables from cluster to determine the most recent one... Local stamp: -7866354960846718802
+Dec 22, 2024 11:19:45 PM com.hazelcast.internal.partition.InternalPartitionService
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Most recent partition table is determined.
+Dec 22, 2024 11:19:45 PM com.hazelcast.internal.partition.InternalPartitionService
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Applying the most recent of partition state...
+Dec 22, 2024 11:19:45 PM com.hazelcast.internal.partition.impl.MigrationManager
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Partition balance is ok, no need to repartition.
+Dec 22, 2024 11:19:45 PM com.hazelcast.internal.partition.impl.MigrationManager
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Shutdown request of Member [192.168.1.58]:5702 - d06235dd-66ea-48a8-b056-42eff2114c34 this is handled
+Dec 22, 2024 11:19:45 PM com.hazelcast.internal.partition.impl.MigrationManager
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Repartitioning cluster data. Migration tasks count: 137
+Dec 22, 2024 11:19:45 PM com.hazelcast.internal.partition.impl.MigrationManager
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] All migration tasks have been completed. (repartitionTime=Sun Dec 22 23:19:45 EET 2024, plannedMigrations=137, completedMigrations=137, remainingMigrations=0, totalCompletedMigrations=321)
+Dec 22, 2024 11:19:45 PM com.hazelcast.instance.impl.Node
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Shutting down multicast service...
+Dec 22, 2024 11:19:45 PM com.hazelcast.instance.impl.Node
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Shutting down connection manager...
+Dec 22, 2024 11:19:45 PM com.hazelcast.internal.server.tcp.TcpServerConnection
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Connection[id=3, /192.168.1.58:5702->/192.168.1.58:38369, qualifier=null, endpoint=[192.168.1.58]:5703, remoteUuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, alive=false, connectionType=MEMBER, planeIndex=0] closed. Reason: TcpServer is stopping
+Dec 22, 2024 11:19:45 PM com.hazelcast.internal.server.tcp.TcpServerConnection
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Connection[id=2, /192.168.1.58:56757->/192.168.1.58:5703, qualifier=null, endpoint=[192.168.1.58]:5703, remoteUuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, alive=false, connectionType=MEMBER, planeIndex=0] closed. Reason: TcpServer is stopping
+Dec 22, 2024 11:19:45 PM com.hazelcast.internal.server.tcp.TcpServerConnection
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Connection[id=3, /192.168.1.58:38369->/192.168.1.58:5702, qualifier=null, endpoint=[192.168.1.58]:5702, remoteUuid=d06235dd-66ea-48a8-b056-42eff2114c34, alive=false, connectionType=MEMBER, planeIndex=0] closed. Reason: Connection closed by the other side
+Dec 22, 2024 11:19:45 PM com.hazelcast.instance.impl.Node
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Shutting down node engine...
+Dec 22, 2024 11:19:45 PM com.hazelcast.internal.server.tcp.TcpServerConnection
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Connection[id=2, /192.168.1.58:5703->/192.168.1.58:56757, qualifier=null, endpoint=[192.168.1.58]:5702, remoteUuid=d06235dd-66ea-48a8-b056-42eff2114c34, alive=false, connectionType=MEMBER, planeIndex=0] closed. Reason: Connection closed by the other side
+Dec 22, 2024 11:19:45 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Connecting to /192.168.1.58:5702, timeout: 10000, bind-any: true
+Dec 22, 2024 11:19:45 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Could not connect to: /192.168.1.58:5702. Reason: IOException[Connection refused to address /192.168.1.58:5702]
+Dec 22, 2024 11:19:45 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Connecting to /192.168.1.58:5702, timeout: 10000, bind-any: true
+Dec 22, 2024 11:19:45 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Could not connect to: /192.168.1.58:5702. Reason: IOException[Connection refused to address /192.168.1.58:5702]
+Dec 22, 2024 11:19:45 PM com.hazelcast.instance.impl.NodeExtension
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Destroying node NodeExtension.
+Dec 22, 2024 11:19:45 PM com.hazelcast.instance.impl.Node
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] Hazelcast Shutdown is completed in 1141 ms.
+Dec 22, 2024 11:19:45 PM com.hazelcast.core.LifecycleService
+INFO: [192.168.1.58]:5702 [my-cluster] [5.4.0] [192.168.1.58]:5702 is SHUTDOWN
+Dec 22, 2024 11:19:45 PM com.hazelcast.core.LifecycleService
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] [192.168.1.58]:5703 is SHUTTING_DOWN
+Dec 22, 2024 11:19:45 PM com.hazelcast.instance.impl.Node
+SEVERE: [192.168.1.58]:5703 [my-cluster] [5.4.0] Graceful shutdown failed for com.hazelcast.cp.internal.RaftService@77010a30
+java.lang.IllegalStateException: Missing CP member in active CP members: [CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703}] for CPGroupInfo{id=CPGroupId{name='METADATA', seed=0, groupId=0}, initialMembers=[RaftEndpoint{uuid='b1ab001f-ac93-4d85-8f8a-8493bd646ab0'}, RaftEndpoint{uuid='d06235dd-66ea-48a8-b056-42eff2114c34'}, RaftEndpoint{uuid='15e586b5-130c-49b2-9343-6a38d8f7dd15'}], membersCommitIndex=7, members=[RaftEndpoint{uuid='d06235dd-66ea-48a8-b056-42eff2114c34'}, RaftEndpoint{uuid='15e586b5-130c-49b2-9343-6a38d8f7dd15'}], status=ACTIVE}
+	at com.hazelcast.cp.internal.CPGroupInfo.toSummary(CPGroupInfo.java:179)
+	at com.hazelcast.cp.internal.MetadataRaftGroupManager.getGroup(MetadataRaftGroupManager.java:347)
+	at com.hazelcast.cp.internal.RaftService.publishGroupAvailabilityEvents(RaftService.java:668)
+	at com.hazelcast.cp.internal.RaftService.publishGroupAvailabilityEventsForGracefulShutdown(RaftService.java:661)
+	at com.hazelcast.cp.internal.RaftService.onShutdown(RaftService.java:586)
+	at com.hazelcast.instance.impl.Node$2.run(Node.java:620)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at com.hazelcast.internal.util.executor.CompletableFutureTask.run(CompletableFutureTask.java:64)
+	at com.hazelcast.internal.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:220)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+	at com.hazelcast.internal.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:76)
+	at com.hazelcast.internal.util.executor.PoolExecutorThreadFactory$ManagedThread.executeRun(PoolExecutorThreadFactory.java:74)
+	at com.hazelcast.internal.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:111)
+
+Dec 22, 2024 11:19:45 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Connecting to /192.168.1.58:5702, timeout: 10000, bind-any: true
+Dec 22, 2024 11:19:45 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Could not connect to: /192.168.1.58:5702. Reason: IOException[Connection refused to address /192.168.1.58:5702]
+Dec 22, 2024 11:19:45 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Connecting to /192.168.1.58:5702, timeout: 10000, bind-any: true
+Dec 22, 2024 11:19:45 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Could not connect to: /192.168.1.58:5702. Reason: IOException[Connection refused to address /192.168.1.58:5702]
+Dec 22, 2024 11:19:45 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Connecting to /192.168.1.58:5702, timeout: 10000, bind-any: true
+Dec 22, 2024 11:19:45 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Could not connect to: /192.168.1.58:5702. Reason: IOException[Connection refused to address /192.168.1.58:5702]
+Dec 22, 2024 11:19:45 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Connecting to /192.168.1.58:5702, timeout: 10000, bind-any: true
+Dec 22, 2024 11:19:45 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Could not connect to: /192.168.1.58:5702. Reason: IOException[Connection refused to address /192.168.1.58:5702]
+Dec 22, 2024 11:19:46 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Connecting to /192.168.1.58:5702, timeout: 10000, bind-any: true
+Dec 22, 2024 11:19:46 PM com.hazelcast.internal.server.tcp.TcpServerConnector
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Could not connect to: /192.168.1.58:5702. Reason: IOException[Connection refused to address /192.168.1.58:5702]
+Dec 22, 2024 11:19:46 PM com.hazelcast.internal.server.tcp.TcpServerConnectionErrorHandler
+WARNING: [192.168.1.58]:5703 [my-cluster] [5.4.0] Removing connection to endpoint [192.168.1.58]:5702 Cause => java.io.IOException {Connection refused to address /192.168.1.58:5702}, Error-Count: 5
+Dec 22, 2024 11:19:46 PM com.hazelcast.internal.cluster.impl.MembershipManager
+WARNING: [192.168.1.58]:5703 [my-cluster] [5.4.0] Member [192.168.1.58]:5702 - d06235dd-66ea-48a8-b056-42eff2114c34 is suspected to be dead for reason: No connection
+Dec 22, 2024 11:19:46 PM com.hazelcast.internal.cluster.impl.MembershipManager
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Starting mastership claim process...
+Dec 22, 2024 11:19:46 PM com.hazelcast.internal.cluster.impl.MembershipManager
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Local MembersView{version=4, members=[MemberInfo{address=[192.168.1.58]:5702, uuid=d06235dd-66ea-48a8-b056-42eff2114c34, cpMemberUUID=null, liteMember=false, memberListJoinVersion=2}, MemberInfo{address=[192.168.1.58]:5703, uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, cpMemberUUID=null, liteMember=false, memberListJoinVersion=3}]} with suspected members: [Member [192.168.1.58]:5702 - d06235dd-66ea-48a8-b056-42eff2114c34] and initial addresses to ask: []
+Dec 22, 2024 11:19:46 PM com.hazelcast.internal.cluster.ClusterService
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] 
+
+Members {size:1, ver:5} [
+	Member [192.168.1.58]:5703 - 15e586b5-130c-49b2-9343-6a38d8f7dd15 this
+]
+
+Dec 22, 2024 11:19:46 PM com.hazelcast.internal.cluster.impl.MembershipManager
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Mastership is claimed with: MembersView{version=5, members=[MemberInfo{address=[192.168.1.58]:5703, uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, cpMemberUUID=null, liteMember=false, memberListJoinVersion=3}]}
+Dec 22, 2024 11:19:46 PM com.hazelcast.cp.internal.raft.impl.RaftNodeImpl$LeaderFailureDetectionTask(METADATA)
+WARNING: [192.168.1.58]:5703 [my-cluster] [5.4.0] Current leader RaftEndpoint{uuid='d06235dd-66ea-48a8-b056-42eff2114c34'} is not reachable. Will start new election round...
+Dec 22, 2024 11:19:46 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: METADATA(0), size:2, term:2, logIndex:7} [
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703} - FOLLOWER this
+]
+
+Dec 22, 2024 11:19:46 PM com.hazelcast.cp.internal.raft.impl.task.PreVoteTask(METADATA)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Pre-vote started for next term: 3, last log index: 13, last log term: 2
+Dec 22, 2024 11:19:46 PM com.hazelcast.cp.internal.raft.impl.RaftNode(METADATA)
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] 
+
+CP Group Members {groupId: METADATA(0), size:2, term:2, logIndex:7} [
+	CPMember{uuid=d06235dd-66ea-48a8-b056-42eff2114c34, address=[192.168.1.58]:5702}
+	CPMember{uuid=15e586b5-130c-49b2-9343-6a38d8f7dd15, address=[192.168.1.58]:5703} - FOLLOWER this
+]
+
+Dec 22, 2024 11:19:46 PM com.hazelcast.internal.partition.InternalPartitionService
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Fetching partition tables from cluster to determine the most recent one... Local stamp: 4833347467451984877
+Dec 22, 2024 11:19:46 PM com.hazelcast.internal.partition.InternalPartitionService
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Most recent partition table is determined.
+Dec 22, 2024 11:19:46 PM com.hazelcast.internal.partition.InternalPartitionService
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Applying the most recent of partition state...
+Dec 22, 2024 11:19:46 PM com.hazelcast.internal.partition.impl.MigrationManager
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Partition balance is ok, no need to repartition.
+Dec 22, 2024 11:19:46 PM com.hazelcast.internal.partition.impl.MigrationManager
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Shutdown request of Member [192.168.1.58]:5703 - 15e586b5-130c-49b2-9343-6a38d8f7dd15 this is handled
+Dec 22, 2024 11:19:46 PM com.hazelcast.instance.impl.Node
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Shutting down multicast service...
+Dec 22, 2024 11:19:46 PM com.hazelcast.internal.cluster.impl.MulticastJoiner
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] [192.168.1.58]:5702 is added to the blacklist.
+Dec 22, 2024 11:19:46 PM com.hazelcast.instance.impl.Node
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Shutting down connection manager...
+Dec 22, 2024 11:19:46 PM com.hazelcast.instance.impl.Node
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Shutting down node engine...
+Dec 22, 2024 11:19:46 PM com.hazelcast.instance.impl.NodeExtension
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Destroying node NodeExtension.
+Dec 22, 2024 11:19:46 PM com.hazelcast.instance.impl.Node
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] Hazelcast Shutdown is completed in 1013 ms.
+Dec 22, 2024 11:19:46 PM com.hazelcast.core.LifecycleService
+INFO: [192.168.1.58]:5703 [my-cluster] [5.4.0] [192.168.1.58]:5703 is SHUTDOWN
+Dec 22, 2024 11:19:46 PM com.labwork.Main main
+INFO: Hazelcast Cluster Shutdown.
